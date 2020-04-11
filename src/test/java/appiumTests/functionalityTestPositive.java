@@ -36,4 +36,34 @@ public class functionalityTestPositive extends Main {
         String screenAfter = driver.findElementById("com.android.calculator2:id/result").getText();
         Assert.assertEquals(screenAfter, "5");
     }
+
+    @Test
+    public static void testingMultiplicationFunction () throws InterruptedException {
+        driver.findElementById("com.android.calculator2:id/digit_2").click();
+        driver.findElementById("com.android.calculator2:id/op_mul").click();
+        driver.findElementById("com.android.calculator2:id/digit_4").click();
+        String screenFirstPart = driver.findElementById("com.android.calculator2:id/formula").getText();
+        String screenSecondPart = driver.findElementById("com.android.calculator2:id/result").getText();
+        Assert.assertEquals(screenFirstPart, "2×4");
+        Assert.assertEquals(screenSecondPart, "8");
+        driver.findElementById("com.android.calculator2:id/eq").click();
+        Thread.sleep(1000);
+        String screenAfter = driver.findElementById("com.android.calculator2:id/result").getText();
+        Assert.assertEquals(screenAfter, "8");
+    }
+
+    @Test
+    public static void testingDivisionFunction () throws InterruptedException {
+        driver.findElementById("com.android.calculator2:id/digit_6").click();
+        driver.findElementById("com.android.calculator2:id/op_div").click();
+        driver.findElementById("com.android.calculator2:id/digit_3").click();
+        String screenFirstPart = driver.findElementById("com.android.calculator2:id/formula").getText();
+        String screenSecondPart = driver.findElementById("com.android.calculator2:id/result").getText();
+        Assert.assertEquals(screenFirstPart, "6÷3");
+        Assert.assertEquals(screenSecondPart, "2");
+        driver.findElementById("com.android.calculator2:id/eq").click();
+        Thread.sleep(1000);
+        String screenAfter = driver.findElementById("com.android.calculator2:id/result").getText();
+        Assert.assertEquals(screenAfter, "2");
+    }
 }
