@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "allTests">
+    <test name = "testing of default interface">
+        <classes>
+            <class name = "appiumTests.interfaceTest"/>
+        </classes>
+    </test>
+    <test name = "testing of functionality">
+        <classes>
+            <class name = "appiumTests.functionalityTest"/>
+        </classes>
+    </test>
+</suite>
