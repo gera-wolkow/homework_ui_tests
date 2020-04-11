@@ -6,9 +6,14 @@
             <class name = "appiumTests.interfaceTest"/>
         </classes>
     </test>
-    <test name = "testing of functionality">
+    <test name = "testing of functionality (positive cases)">
         <classes>
-            <class name = "appiumTests.functionalityTest"/>
+            <class name = "appiumTests.functionalityTestPositive"/>
+        </classes>
+    </test>
+    <test name = "testing of functionality (negative cases)">
+        <classes>
+            <class name = "appiumTests.functionalityTestNegative"/>
         </classes>
     </test>
 </suite>

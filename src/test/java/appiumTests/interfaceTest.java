@@ -32,5 +32,7 @@ public class interfaceTest extends Main {
             Assert.assertEquals(buttonNine, "9");
             String buttonZero = driver.findElementById("com.android.calculator2:id/digit_0").getText();
             Assert.assertEquals(buttonZero, "0");
+            String buttonPoint = driver.findElementById("com.android.calculator2:id/dec_point").getText();
+            Assert.assertEquals(buttonPoint, ".");
         }
 }
