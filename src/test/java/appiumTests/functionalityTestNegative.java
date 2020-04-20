@@ -9,25 +9,25 @@ import org.testng.annotations.Test;
 public class functionalityTestNegative  extends Main {
     @Test
     public static void testingDividingByZero () throws InterruptedException {
-        driver.findElementById("com.android.calculator2:id/digit_6").click();
-        driver.findElementById("com.android.calculator2:id/op_div").click();
-        driver.findElementById("com.android.calculator2:id/digit_0").click();
-        driver.findElementById("com.android.calculator2:id/eq").click();
+        calculatorPage.buttonSix.click();
+        calculatorPage.buttonDiv.click();
+        calculatorPage.buttonZero.click();
+        calculatorPage.buttonEqual.click();
         Thread.sleep(1000);
-        String screenAfter = driver.findElementById("com.android.calculator2:id/result").getText();
+        String screenAfter = calculatorPage.screenResult.getText();
         Assert.assertEquals(screenAfter, "Can't divide by 0");
     }
 
     @Test
     public static void testingSeveralPoints () throws InterruptedException {
         int n = 0;
-        driver.findElementById("com.android.calculator2:id/digit_5").click();
+        calculatorPage.buttonFive.click();
         while (n <20) {
-            driver.findElementById("com.android.calculator2:id/dec_point").click();
+            calculatorPage.buttonPoint.click();
             n++;
         }
-        driver.findElementById("com.android.calculator2:id/digit_3").click();
-        String screenFirstPart = driver.findElementById("com.android.calculator2:id/formula").getText();
+        calculatorPage.buttonThree.click();
+        String screenFirstPart = calculatorPage.screenFormula.getText();
         Assert.assertEquals(screenFirstPart, "5.3");
     }
 }

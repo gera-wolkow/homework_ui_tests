@@ -12,27 +12,27 @@ public class interfaceTest extends Main {
 
         @Test
         public static void buttonsValuesTest () {
-            String buttonOne = driver.findElementById("com.android.calculator2:id/digit_1").getText();
+            String buttonOne = calculatorPage.buttonOne.getText();
             Assert.assertEquals(buttonOne, "1");
-            String buttonTwo = driver.findElementById("com.android.calculator2:id/digit_2").getText();
+            String buttonTwo = calculatorPage.buttonTwo.getText();
             Assert.assertEquals(buttonTwo, "2");
-            String buttonThree = driver.findElementById("com.android.calculator2:id/digit_3").getText();
+            String buttonThree = calculatorPage.buttonThree.getText();
             Assert.assertEquals(buttonThree, "3");
-            String buttonFour = driver.findElementById("com.android.calculator2:id/digit_4").getText();
+            String buttonFour = calculatorPage.buttonFour.getText();
             Assert.assertEquals(buttonFour, "4");
-            String buttonFive  = driver.findElementById("com.android.calculator2:id/digit_5").getText();
+            String buttonFive  = calculatorPage.buttonFive.getText();
             Assert.assertEquals(buttonFive, "5");
-            String buttonSix = driver.findElementById("com.android.calculator2:id/digit_6").getText();
+            String buttonSix = calculatorPage.buttonSix.getText();
             Assert.assertEquals(buttonSix, "6");
-            String buttonSeven = driver.findElementById("com.android.calculator2:id/digit_7").getText();
+            String buttonSeven = calculatorPage.buttonSeven.getText();
             Assert.assertEquals(buttonSeven, "7");
-            String buttonEight = driver.findElementById("com.android.calculator2:id/digit_8").getText();
+            String buttonEight = calculatorPage.buttonEight.getText();
             Assert.assertEquals(buttonEight, "8");
-            String buttonNine = driver.findElementById("com.android.calculator2:id/digit_9").getText();
+            String buttonNine = calculatorPage.buttonNine.getText();
             Assert.assertEquals(buttonNine, "9");
-            String buttonZero = driver.findElementById("com.android.calculator2:id/digit_0").getText();
+            String buttonZero = calculatorPage.buttonZero.getText();
             Assert.assertEquals(buttonZero, "0");
-            String buttonPoint = driver.findElementById("com.android.calculator2:id/dec_point").getText();
+            String buttonPoint = calculatorPage.buttonPoint.getText();
             Assert.assertEquals(buttonPoint, ".");
         }
 }
