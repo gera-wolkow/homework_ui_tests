@@ -1,3 +1,13 @@
-/.idea/
-/homework_ui_tests.iml
-/.gitignore
+##----------idea----------
+*.iml
+.idea/
+*.ipr
+*.iws
+
+##----------selenium----------
+build/
+
+##----------Other----------
+# osx
+*~
+.DS_Store

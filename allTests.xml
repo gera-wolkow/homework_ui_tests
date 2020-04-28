@@ -3,17 +3,17 @@
 <suite name = "allTests">
     <test name = "testing of default interface">
         <classes>
-            <class name = "appiumTests.interfaceTest"/>
+            <class name = "tests.tests.InterfaceTest"/>
         </classes>
     </test>
     <test name = "testing of functionality (positive cases)">
         <classes>
-            <class name = "appiumTests.functionalityTestPositive"/>
+            <class name = "tests.tests.FunctionalityTestPositive"/>
         </classes>
     </test>
     <test name = "testing of functionality (negative cases)">
         <classes>
-            <class name = "appiumTests.functionalityTestNegative"/>
+            <class name = "tests.tests.FunctionalityTestNegative"/>
         </classes>
     </test>
 </suite>

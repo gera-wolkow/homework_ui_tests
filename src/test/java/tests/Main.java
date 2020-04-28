@@ -1,4 +1,4 @@
-package appiumTests;
+package tests;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
@@ -17,7 +17,7 @@ import java.net.URL;
  */
 public class Main {
 
-    static  AppiumDriver <MobileElement> driver;
+    public static  AppiumDriver <MobileElement> driver;
 
     @BeforeSuite
     public static void setupApplication () throws Exception {
